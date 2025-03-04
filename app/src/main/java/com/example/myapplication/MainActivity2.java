@@ -21,7 +21,6 @@ public class MainActivity2 extends AppCompatActivity {
 
       Intent i= getIntent();
 
-        // Récupérer les TextView depuis le layout
         nomText = findViewById(R.id.nom);
         emailText = findViewById(R.id.email);
         phoneText = findViewById(R.id.phone);
@@ -29,15 +28,12 @@ public class MainActivity2 extends AppCompatActivity {
         villeText = findViewById(R.id.ville);
 
 
-        // Récupérer les données passées via l'intent
-
         String nom = i.getStringExtra("nom");
         String email = i.getStringExtra("email");
         String phone = i.getStringExtra("phone");
         String adresse = i.getStringExtra("adresse");
         String ville = i.getStringExtra("ville");
 
-        // Afficher les données dans les TextView
         nomText.setText(nom);
         emailText.setText(email);
         phoneText.setText(phone);
